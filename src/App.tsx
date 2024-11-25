@@ -60,7 +60,7 @@ function App() {
             <div className="flex items-center space-x-6">
               <RateLimitInfo />
               <a
-                href="https://linkedin.com/in/mohideen"
+                href="https://linkedin.com/in/mohideen38"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-gray-600 hover:text-coral transition-colors"
