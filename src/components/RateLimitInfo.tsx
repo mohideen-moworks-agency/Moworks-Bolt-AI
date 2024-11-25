@@ -8,7 +8,7 @@ export function RateLimitInfo() {
   React.useEffect(() => {
     const interval = setInterval(() => {
       setInfo(getRateLimitInfo());
-    }, 86400);
+    }, 86400000);
 
     return () => clearInterval(interval);
   }, []);

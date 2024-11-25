@@ -55,7 +55,7 @@ function App() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <img src="/moworks-logo.svg" alt="Moworks" className="h-8 w-8 text-coral" />
-              <h1 className="text-2xl font-bold text-gray-900">Moworks.AI</h1>
+              <h1 className="text-2xl font-bold text-gray-900">Moworks.</h1>
             </div>
             <div className="flex items-center space-x-6">
               <RateLimitInfo />
@@ -66,7 +66,7 @@ function App() {
                 className="flex items-center space-x-2 text-gray-600 hover:text-coral transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
-                <span>Connect on LinkedIn</span>
+                <span>Lets connect on LinkedIn</span>
               </a>
               {results && (
                 <button
