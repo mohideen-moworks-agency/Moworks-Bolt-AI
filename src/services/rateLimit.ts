@@ -1,6 +1,6 @@
 import { RateLimitError } from './errors';
 
-const RATE_LIMIT = 10; // requests per window
+const RATE_LIMIT = 5; // requests per window
 const WINDOW_MS = 86400000; // 1 day in milliseconds
 
 interface RateLimitData {
