@@ -9,15 +9,13 @@ export interface AnalysisParams {
   industry: string;
   companySize: string;
   department: string;
-  currentSystem: string; // New field
-  painPoints: string; // New field
+  currentSystem: string;  // New field
+  painPoints: string;     // New field
 }
 
 // AnalysisResult interface remains the same
 
-export async function generateAnalysis(
-  params: AnalysisParams
-): Promise<AnalysisResult> {
+export async function generateAnalysis(params: AnalysisParams): Promise<AnalysisResult> {
   // Check rate limit before making the API call
   checkRateLimit();
 
@@ -147,13 +145,13 @@ Requirements:
     const result = await model.generateContent(prompt);
     const response = result.response;
     const text = response.text();
-
+    
     // Extract JSON from the response
     const jsonMatch = text.match(/\{[\s\S]*\}/);
     if (!jsonMatch) {
       throw new Error('Invalid response format');
     }
-
+    
     const analysisData = JSON.parse(jsonMatch[0]);
     return analysisData;
   } catch (error) {
